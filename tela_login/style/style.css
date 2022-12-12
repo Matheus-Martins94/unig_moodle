@@ -204,15 +204,18 @@ li {
 @media (max-width: 414px) {
     #login {
         left: 5%;
+        min-width: 40%;
+        max-height: 35%;
+        min-height: 35%;
     }
 
     .bg {
-        height: 105vh;
+        height: 100vh;
     }
 
     #rodape {
         position: absolute;
-        bottom: -4vh;
+        bottom: 1px;
     }
 }
 
@@ -234,9 +237,12 @@ li {
 }
 
 @media (max-width: 375px) {
+    .bg {
+        height: 101vh;
+    }
     #rodape {
         position:static;
-        bottom: 1px;
+        bottom: -1vh;
     }
     #login {
         min-height: 45%;
@@ -247,7 +253,7 @@ li {
         display: block;
     }
     .teste {
-        margin-top: 90vh;
+        margin-top: 100vh;
         margin-bottom: -90vh;
         display: 60vh;
         color: transparent;
