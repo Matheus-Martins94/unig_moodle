@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+li {
+    margin-top: 5px;
+}
+
+.button {
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 30%;
+    background-color: #053453;
+    padding: 7px;
+}
+
+#login {
+    position: absolute;
+    top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    min-height: 55%;
+    min-width: 20%;
+    padding: 40px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: -20px;
+}
+
+.img-login {
+    width: 150px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+#rodape {
+    color: #fff;
+    font-size: 10pt;
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.email {
+    margin-right: 10%;
+}
+
+.credit {
+    width: 40%;
+    margin-right: 10%;
+}
+
+.history {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.bi {
+    font-size: 15pt;
+    margin: 4px;
+    color: #fff;
+}
+
+.direitos {
+    font-size: 8pt;
+}
+
+.direitos p {
+    margin-top: 10px;
+}
+
+.telefones {
+    margin-right: 20%;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1366px) {
+    .bg {
+        height: 100vh;
+    }
+    #rodape {
+        position: absolute;
+        bottom: 1px;
+    }
+    #login {
+        min-width: 25%;
+        min-height: 50%;
+        max-height: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bg {
+        height: 100vh;
+    }
+    #rodape {
+        display: block;
+        color: #fff;
+        position: absolute;
+        bottom: 1px;
+    }
+    
+    .credit {
+        width: 80%;
+    }
+
+    .direitos {
+        margin-bottom: 20px;
+    }
+
+    .telefones {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bg {
+        height: 120vh;
+    }
+    #rodape {
+        position: absolute;
+        bottom: -20vh;
+    }
+}
+
+
+@media (max-width: 912px) {
+    .bg {
+        max-height: 100vh;
+    }
+    #rodape {
+        position: absolute;
+        bottom: 1px;
+    }
+    #login {
+        min-width: 40%;
+        height: 45%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 660px) {
+    body {
+        background-image: url('../img/bgfull_login_mobile.png');
+    }
+    .desktop {
+        display: none;
+    }
+    #rodape {
+        position:static;
+        margin-top: 60vh;
+        bottom: 1px;
+    }
+    #login {
+        top: 2%;
+        left: 15%;
+    }
+}
+
+@media (max-width: 450px) {
+    #rodape {
+        position:static;
+        margin-top: 50vh;
+    }
+    #login {
+        min-width: 60%;
+        left: 9%
+    }
+}
+
+@media (max-width: 414px) {
+    #login {
+        left: 5%;
+    }
+
+    .bg {
+        height: 105vh;
+    }
+
+    #rodape {
+        position: absolute;
+        bottom: -4vh;
+    }
+}
+
+@media (max-width: 412px) {
+    #login {
+        left: 5%;
+    }
+    .bg {
+        height: 100vh;
+    }
+    #rodape {
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+    }
+    .history {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    #rodape {
+        position:static;
+        bottom: 1px;
+    }
+    #login {
+        min-height: 45%;
+        top: 2%;
+        left: 3%;
+    }
+    .mobile {
+        display: block;
+    }
+    .teste {
+        margin-top: 90vh;
+        margin-bottom: -90vh;
+        display: 60vh;
+        color: transparent;
+    }
+}
+
+@media (max-width: 360px) {
+    .bg {
+        min-height: 100vh;
+    }
+    #rodape {
+        display: block;
+        position: absolute;
+        bottom: 1px;
+    }
+    .history {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    #login {
+        min-width: 40%;
+        max-width: 75%;
+        min-height: 40%;
+        max-height: 60%;
+        left: 1%;
+    }
+    .teste {
+        margin-bottom: -50vh;
+    }
+}
