@@ -49,22 +49,14 @@ body {
 }
 
 .top-2 {
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(0,0,0,0.3);
   border-bottom: 1px solid #fff;
 }
 
 .top-2 h1 {
-  font-size: 15pt;
-}
-
-#sumary {
-  background-color: rgba(0,0,0,0.3);
-  padding: 10px;
-}
-
-#side-bar ul{
-  list-style-type: none;
+  font-size: 12pt;
+  margin-top: 10px;
 }
 
 #content {
@@ -75,26 +67,23 @@ body {
   margin-bottom: 10px;
 }
 
-#welcome-list{
-  margin-top: 10px;
+#content div.d-flex form input {
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#content div.d-flex form input::placeholder {
+  color: #fff;
+}
+
+.bi-search {
+  margin-left: 10px;
+}
+
+.quem-somos h4{
   margin-bottom: 10px;
-}
-
-#topic-list {
-  list-style: none;
-  margin-top: 40px;
-}
-
-#topic-list li {
-  display: flex;
-}
-
-#topic-list li p {
-  margin-top: 10px;
-}
-
-.topic-image {
-  width: 50px;
 }
 
 footer {
@@ -115,7 +104,6 @@ footer {
   margin-top: 10px;
 }
 
-
 @media (min-width: 800px) {
   .top-2 {
     height: 100px;
@@ -126,15 +114,19 @@ footer {
     display: flex;
   }
 
-  #sumary {
-    width: 30%;
-    height: 70vh;
-  }
-
   #content {
     width: 70%;
   }
 
+  #content div.d-flex {
+    display: flex;
+  }
+  
+  #content div.d-flex form {
+    position: relative;
+    right: -60vw;
+  }
+  
   footer {
     position: absolute;
     bottom: 1px;
